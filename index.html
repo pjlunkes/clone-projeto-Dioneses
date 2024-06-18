@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Share</title>
+    <link rel="icon" href="imgs/logo_simplified.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg no-padding navinosa" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex justify-content-start align-items-center m-0 p-0 ps-3" href="#">
+                <figure class="w-30 no-margin">
+                    <img src="imgs/logo_logo.png" class="img-fluid w-80" alt="">
+                </figure>
+                <p class="ps-3 text-white no-margin">Sunset Share</p>
+            </a>
+
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-theme="dark">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <span class="text-white pt-2 d-none d-lg-block">-</span>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="song.html">Músicas</a>
+                    </li>
+                    <span class="text-white pt-2 d-none d-lg-block">-</span>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="podcast.html">Podcasts</a>
+                    </li>
+                </ul>
+                <!-- <div class="nav-item no-margin no-padding d-block d-lg-none pt-2 pb-2">
+                    <button class="btn btn-dark rounded">Login</button>
+                </div> -->
+            </div>
+            <div class="d-none d-lg-flex paralogramo gradient d-flex justify-content-center align-items-center">
+                <!-- <div class="unskew">
+                    <button class="btn btn-dark">Login</button>
+                </div> -->
+                <!-- Scrollable modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary unskew" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Login
+                </button>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="header">
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner position-relative">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center position-absolute w-100 h-100">
+                        <h1 class="header-text display-3 text-white">
+                            <figure class="d-flex justify-content-center">
+                                <img src="imgs/text_logo.png" alt="" class="img-fluid w-80">
+                            </figure>
+                        </h1>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="imgs/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="background">
+            <div class="container">
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content bg-dark-subtle">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Ops, encontramos um erro</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Tente verificar:</h3>
+                                <p>
+                                    <strong>Credenciais Incorretas: </strong>
+                                    <br>
+                                    <strong>Usuário ou Senha Incorretos:</strong> O problema mais comum é a digitação
+                                    incorreta do nome de usuário ou senha. Certifique-se de que está digitando as
+                                    credenciais corretas, verificando a sensibilidade a maiúsculas e minúsculas.
+                                    <br>
+                                    <strong>Esqueci Minha Senha:</strong> Se você esqueceu sua senha, utilize a opção de
+                                    recuperação de senha para redefinir sua senha.
+                                    <br>
+                                    <br>
+                                    <strong>Conta Bloqueada ou Suspensa:</strong>
+                                    <br>
+
+
+                                    <strong>Conta Bloqueada:</strong> Muitas tentativas de login mal-sucedidas podem
+                                    levar ao bloqueio temporário da conta por motivos de segurança.
+                                    <br>
+                                    <strong>Conta Suspensa:</strong> Sua conta pode ter sido suspensa devido a violações
+                                    dos termos de serviço ou atividades suspeitas.
+                                    <br>
+                                    <br>
+                                    <strong>Problemas de Rede:</strong>
+                                    <br>
+                                    <strong>Conexão de Internet:</strong> Verifique se você está conectado à internet.
+                                    Problemas de conexão podem impedir a comunicação com o servidor de autenticação.
+                                    <br>
+                                    <strong>Problemas no Servidor:</strong> O servidor de login pode estar fora do ar ou
+                                    enfrentando problemas técnicos.
+                                    <br>
+                                    <br>
+                                    <strong>Erros de Configuração da Conta:</strong>
+                                    <br>
+                                    <strong>Conta Não Verificada:</strong> Algumas plataformas exigem que você verifique
+                                    sua conta através de um e-mail de confirmação. Verifique se você recebeu um e-mail
+                                    de verificação e siga as instruções.
+                                    <br>
+                                    <strong>Dados Desatualizados:</strong> Se os dados da sua conta estiverem
+                                    desatualizados, como um e-mail antigo ou um número de telefone desativado, isso pode
+                                    causar problemas de login.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">fechar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="pt-5 text-white  border-bottom border-white">Sua música a um clique de distância.</h3>
+                <div class="grey mt-5 rounded">
+                    <div class="row p-4">
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: fit-content;">
+                                <img src="imgs/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="d-flex justify-content-center fs-4 ">Sertanejo para todas as horas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: fit-content;">
+                                <img src="imgs/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="d-flex justify-content-center fs-4 ">Faça da louça sua Rave!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: fit-content;">
+                                <img src="imgs/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="d-flex justify-content-center fs-4 ">Para relaxar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 pt-4">
+                            <div class="card" style="width: fit-content;">
+                                <img src="imgs/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="d-flex justify-content-center fs-4 ">Tem hora para agitar? Não mesmo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 pt-4">
+                            <div class="card" style="width: fit-content;">
+                                <img src="imgs/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="d-flex justify-content-center fs-4 ">Nota de Ouro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 pt-4">
+                            <div class="card" style="width: fit-content;">
+                                <img src="imgs/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="d-flex justify-content-center fs-4 ">Harmonia Suprema</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="d-flex justify-content-center">
+                        <h3 class="display-6 text-white">Por que escolher a Sunset Share?</h3>
+                    </div>
+                    <div class="d-flex justify-content-center pt-2 mb-5 pb-4">
+                        <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                            id, ipsam ex cumque quae eaque nihil
+                            nesciunt, quam ipsa animi voluptatibus neque earum architecto quos autem tenetur asperiores
+                            sunt
+                            consequuntur?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="chao pt-1 grey row">
+
+        <div class="col-4 fs-1 pddingNeg">
+            <span>
+                <ul>
+                    
+                </ul>
+            </span>
+        </div>
+        <div class="col-3 fs-1 bg-white">
+            <span>
+                <div></div>
+            </span>
+        </div>
+        <div class="darkinosa col-3 ">
+            <ul class="d-flex  list-unstyled pt-1 pb-2 fs-1">
+                <a href="" id="icon1"><i class="bi bi-play-circle c1"></i></a>
+                <a href="" id="icon2" style="display: none;"><i class="bi bi-pause-circle c2"></i></a>
+            </ul>
+        </div>
+
+        <!-- <div class="col-3"><span></span></div> -->
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
