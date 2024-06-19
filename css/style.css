@@ -18,7 +18,6 @@ body {
 
 .grey {
     background-color: #222222;
-
 }
 
 .rounded {
@@ -28,6 +27,7 @@ body {
 .background {
     background-color: #000000;
 }
+
 
 .no-padding {
     padding: 0;
@@ -149,3 +149,19 @@ body {
     padding-right: -1.5vh;
 }
 
+.darknosa{
+    height: 44px;
+}
+.background-green{
+    background-color: #60fc6d;
+}
+.background-other-color{
+    background-color: #2F1047;
+}
+.music{
+    height: 20vh;
+
+}
+.marginCard{
+    margin: 0 auto;
+}
